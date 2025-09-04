@@ -40,7 +40,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                echo "Building Docker..."
+                echo "Building Docker...."
                 bat "docker build -t calculator-app:%BUILD_NUMBER% ."
             }
         }
